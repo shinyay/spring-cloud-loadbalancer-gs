@@ -3,6 +3,8 @@
 Client-side load-balancer abstraction and implementation provided by Spring Cloud
 
 ## Description
+### Dependency
+- spring-cloud-starter-loadbalancer
 
 ## Demo
 
