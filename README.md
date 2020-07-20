@@ -1,6 +1,6 @@
-# Name
+# Spring Cloud Loadbalancer Getting Started
 
-Overview
+Client-side load-balancer abstraction and implementation provided by Spring Cloud
 
 ## Description
 
