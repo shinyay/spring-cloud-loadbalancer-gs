@@ -10,7 +10,7 @@ import org.springframework.web.client.RestTemplate
 class CallController(val template: RestTemplate,
                      val environment: Environment) {
 
-    @GetMapping("myapp")
+    @GetMapping("/myapp")
     fun call(): String {
         val url = "http://callme-service/callme"
         val callmeResponse = template.getForObject(url, String::class.java)
