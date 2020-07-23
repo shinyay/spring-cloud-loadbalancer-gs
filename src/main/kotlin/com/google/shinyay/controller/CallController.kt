@@ -12,9 +12,9 @@ class CallController(val template: RestTemplate,
 
     @GetMapping("/myapp")
     fun call(): String {
-        val url = "http://callme-service/callme"
-        val callmeResponse = template.getForObject(url, String::class.java)
-        logger.info("Response: $callmeResponse")
-        return "Port: ${environment.getProperty("local.server.port")} calling -> $callmeResponse"
+        val url = "http://config-client/myapp"
+        val response = template.getForObject(url, String::class.java)
+        logger.info("Response: $response")
+        return "Port: ${environment.getProperty("local.server.port")} calling -> $response"
     }
 }
