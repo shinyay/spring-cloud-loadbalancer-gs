@@ -6,6 +6,14 @@ Client-side load-balancer abstraction and implementation provided by Spring Clou
 ### Dependency
 - spring-cloud-starter-loadbalancer
 
+### Related Repository
+
+- https://github.com/shinyay/spring-cloud-getting-started
+- https://github.com/shinyay/spring-cloud-gateway-gs
+- https://github.com/shinyay/spring-cloud-config-gs
+- https://github.com/shinyay/spring-cloud-eureka-server-gs
+- https://github.com/shinyay/spring-cloud-config-client-gs
+
 ## Demo
 
 ## Features
