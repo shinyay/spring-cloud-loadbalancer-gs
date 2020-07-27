@@ -14,6 +14,14 @@ Client-side load-balancer abstraction and implementation provided by Spring Clou
 - https://github.com/shinyay/spring-cloud-eureka-server-gs
 - https://github.com/shinyay/spring-cloud-config-client-gs
 
+### Spring RestTemplate as a Load Balancer Client
+Create a `RestTemplate` Bean with `@Bean` and `@LoadBalanced` qualifier
+
+```kotlin
+@LoadBalanced
+@Bean
+fun template() = RestTemplate()
+```
 ## Demo
 
 ## Features
