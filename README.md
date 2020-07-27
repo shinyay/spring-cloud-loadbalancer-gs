@@ -27,6 +27,14 @@ fun template() = RestTemplate()
 template.getForObject(url, String::class.java)
 ```
 
+### Spring WebClient as a Load Balancer Client
+Create a `WebClient.Builder` Bean with `@Bean` and `@LoadBalanced` qualifier
+
+```kotlin
+@LoadBalanced
+@Bean
+fun webClient() = WebClient.builder()
+```
 ## Demo
 
 ## Features
