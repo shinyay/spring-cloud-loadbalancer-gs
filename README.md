@@ -35,6 +35,15 @@ Create a `WebClient.Builder` Bean with `@Bean` and `@LoadBalanced` qualifier
 @Bean
 fun webClient() = WebClient.builder()
 ```
+
+```kotlin
+webClientBuilder.build()
+    .get()
+    .uri(url)
+    .retrieve()
+    .bodyToMono(String::class.java)
+```
+
 ## Demo
 
 ## Features
