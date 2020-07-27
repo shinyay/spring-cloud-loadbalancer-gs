@@ -22,6 +22,11 @@ Create a `RestTemplate` Bean with `@Bean` and `@LoadBalanced` qualifier
 @Bean
 fun template() = RestTemplate()
 ```
+
+```kotlin
+template.getForObject(url, String::class.java)
+```
+
 ## Demo
 
 ## Features
