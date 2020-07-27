@@ -1,6 +1,10 @@
 spring:
   application:
     name: loadbalancer
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
 server:
   port: 8090
 eureka:
