@@ -19,7 +19,7 @@ class CallController(val template: RestTemplate,
     fun call(): String {
         val url = "http://config-client/myapp"
         val response = template.getForObject(url, String::class.java)
-        logger.info("Response: $response")
+        logger.info("LoadBalancing by RestTemplate")
         return "Port: ${environment.getProperty("local.server.port")} calling -> $response"
     }
 
